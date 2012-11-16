@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.version     = Version::VERSION
   s.authors     = ["AKI"]
   s.email       = ["aki@jetthoughts.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Version."
+  s.homepage    = "www.jetthoughts.com"
+  s.summary     = "Change format"
   s.description = "Showing version of app"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
