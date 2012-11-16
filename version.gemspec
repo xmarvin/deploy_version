@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Version::VERSION
   s.authors     = ["AKI"]
   s.email       = ["aki@jetthoughts.com"]
-  s.homepage    = "www.jetthoughts.com"
+  s.homepage    = "http://jetthoughts.com"
   s.summary     = "Change format"
   s.description = "Showing version of app"
 
