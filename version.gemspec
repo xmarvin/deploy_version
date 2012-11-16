@@ -7,8 +7,8 @@ require "version/version"
 Gem::Specification.new do |s|
   s.name        = "version"
   s.version     = Version::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["AKI"]
+  s.email       = ["aki@jetthoughts.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of Version."
   s.description = "Showing version of app"

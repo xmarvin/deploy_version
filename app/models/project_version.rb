@@ -8,7 +8,7 @@ class ProjectVersion
     begin
       revision_info = File.read(Rails.root.join('.current-revision-info')).split(/\n/)
       commit = revision_info[0].gsub('commit ', '')
-      date = revision_info[3].gsub('Date: ', '')
+      date = revision_info[1].gsub('Date: ', '')
     rescue
     end 
     db_version = ActiveRecord::Base.connection.select_all 'SELECT version FROM schema_migrations ORDER BY version DESC LIMIT 1'
