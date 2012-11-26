@@ -6,7 +6,7 @@ require "version/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "deploy_version"
-  s.version     = Version::VERSION
+  s.version     = DeployVersion::VERSION
   s.authors     = ["Aki"]
   s.email       = ["aki@jetthoughts.com"]
   s.homepage    = "http://jetthoughts.com"
