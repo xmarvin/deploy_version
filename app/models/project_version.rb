@@ -6,9 +6,9 @@ class ProjectVersion
   def initialize
     commit, date = ''
     begin
-      revision_info = File.read(Rails.root.join('.current-revision-info')).split(/\n/)
-      commit = revision_info[0]
-      date = revision_info[1]
+      path = Rails.root.join('REVISION')
+      commit = File.read(path)   
+      date = File.mtime(path)
     rescue
     end 
     db_version = ActiveRecord::Base.connection.select_all 'SELECT version FROM schema_migrations ORDER BY version DESC LIMIT 1'
