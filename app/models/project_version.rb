@@ -2,11 +2,13 @@ class ProjectVersion
   include Singleton
 
   attr_reader :info
+  
+  REVISION_FILE_NAME = 'REVISION'
 
   def initialize
     commit, date = ''
     begin
-      path = Rails.root.join('REVISION')
+      path = Rails.root.join(REVISION_FILE_NAME)
       commit = File.read(path)   
       date = File.mtime(path)
     rescue

@@ -5,17 +5,15 @@ require "version/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "version"
+  s.name        = "deploy_version"
   s.version     = Version::VERSION
-  s.authors     = ["AKI"]
+  s.authors     = ["Aki"]
   s.email       = ["aki@jetthoughts.com"]
   s.homepage    = "http://jetthoughts.com"
-  s.summary     = "Change format"
+  s.summary     = "Using revision file provided by capistrano"
   s.description = "Showing version of app"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
-
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["Rakefile", "README.rdoc"]
   s.add_dependency "rails", "~> 3.2.6"
 
   s.add_development_dependency "mysql2"
